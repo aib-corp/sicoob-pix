@@ -113,6 +113,19 @@ $webhook = new \Elemke\SicoobPix\Webhook($psp);
 $webhook->deletar('teste@teste.com');
 ```
 
+#### Gerar certificado a partir do A1
+
+Extrair público
+openssl pkcs12 -in PFX.pfx -nokeys -out PEM.pem
+
+Extrair privado
+openssl pkcs12 -in PFX.pfx -nocerts -out KEY.key
+
+Validar se batem os hashs
+openssl x509 -noout -modulus -in PEM.pem | openssl md5
+openssl rsa -noout -modulus -in KEY.key | openssl md5
+
+
 #### Licença
 
 MIT
