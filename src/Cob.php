@@ -1,10 +1,10 @@
 <?php
 
-namespace Elemke\SicoobPix;
+namespace AibCorp\SicoobPix;
 
 /**
  * Class Cob reúne endpoints destinados a lidar com gerenciamento de cobranças imediatas.
- * @package elemke\sicoobpix
+ * @package aibcorp\sicoobpix
  */
 class Cob
 {

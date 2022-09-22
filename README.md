@@ -1,3 +1,7 @@
+## PROJETO ORIGINAL
+https://github.com/elemke/sicoob-pix
+
+
 ## Pacote integração PIX Sicoob
 
 Esse pacote oferece integração com a API PIX do sistema Sicoob, conforme documentação do Banco Central do Brasil.
@@ -15,7 +19,7 @@ pagamento (PSP) pode não implementar todos eles.
 ### Instalação
 
 ```phpt
-composer require elemke/sicoob-pix
+composer require aibcorp/sicoob-pix
 ```
 
 ### Configurações Iniciais
@@ -95,21 +99,21 @@ $cob->alterar($cobranca, 'xxxx');
 ```phpt
 $scope = ['webhook.read', 'webhook.write']; //Veja a lista completa na documentação do Banco Central
 $psp = new Psp($scope);
-$webhook = new \Elemke\SicoobPix\Webhook($psp);
+$webhook = new \AibCorp\SicoobPix\Webhook($psp);
 $webhook->criar('teste@teste.com', 'https://www.teste.com');
 ```
 
 #### Consultar webhook
 
 ```phpt
-$webhook = new \Elemke\SicoobPix\Webhook($psp);
+$webhook = new \AibCorp\SicoobPix\Webhook($psp);
 $webhook->consultar('teste@teste.com');
 ```
 
 #### Deletar webhook
 
 ```phpt
-$webhook = new \Elemke\SicoobPix\Webhook($psp);
+$webhook = new \AibCorp\SicoobPix\Webhook($psp);
 $webhook->deletar('teste@teste.com');
 ```
 

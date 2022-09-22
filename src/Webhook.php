@@ -1,10 +1,10 @@
 <?php
 
-namespace Elemke\SicoobPix;
+namespace AibCorp\SicoobPix;
 
 /**
  * Class webhook reúne endpoints destinados a gerenciamento de webhooks.
- * @package elemke\sicoobpix
+ * @package aibcorp\sicoobpix
  */
 class Webhook
 {

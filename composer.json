@@ -1,5 +1,5 @@
 {
-  "name": "elemke/sicoob-pix",
+  "name": "aibcorp/sicoob-pix",
   "description": "Biblioteca integração Pix Sicoob",
   "version": "0.0.1",
   "type": "library",
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Elemke\\SicoobPix\\": "src/"
+      "AibCorp\\SicoobPix\\": "src/"
     }
   }
 }

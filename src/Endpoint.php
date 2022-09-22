@@ -1,6 +1,6 @@
 <?php
 
-namespace Elemke\SicoobPix;
+namespace AibCorp\SicoobPix;
 
 class Endpoint
 {
