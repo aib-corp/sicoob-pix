@@ -24,9 +24,11 @@ class ClientHttp
             $response = $client->request($metodo, $url,
                 [
                     'json' => $body,
-                    'debug' => $this->debug ?? false,
+                    //'debug' => $this->debug ?? false,
+                    'debug' => fopen('php://stderr', 'w'),
                     'headers' => [
-                        'Authorization' => "Bearer {$this->token}"
+                        'Authorization' => "Bearer {$this->token}",
+                        'Accept' => 'application/json'
                     ],
                     'cert' => $this->certificadoPublico,
                     'ssl_key' => $this->certificadoPrivado
